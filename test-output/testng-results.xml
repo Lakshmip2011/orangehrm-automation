@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-29T20:00:45 IST" name="OrangeHRM Suite" finished-at="2025-08-29T20:02:16 IST" duration-ms="91266">
+    <groups>
+    </groups>
+    <test started-at="2025-08-29T20:00:45 IST" name="OrangeHRM Tests" finished-at="2025-08-29T20:02:16 IST" duration-ms="91266">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@75d4a5c2]" started-at="2025-08-29T20:00:45 IST" name="setUp" finished-at="2025-08-29T20:00:58 IST" duration-ms="13112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin()[pri:0, instance:tests.LoginTest@75d4a5c2]" started-at="2025-08-29T20:00:58 IST" name="testLogin" finished-at="2025-08-29T20:01:00 IST" duration-ms="2742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@75d4a5c2]" started-at="2025-08-29T20:01:00 IST" name="tearDown" finished-at="2025-08-29T20:01:01 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.UpdateEmployeeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.UpdateEmployeeTest@7c6908d7]" started-at="2025-08-29T20:01:30 IST" name="setUp" finished-at="2025-08-29T20:01:36 IST" duration-ms="5863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUpdateEmployee()[pri:0, instance:tests.UpdateEmployeeTest@7c6908d7]" started-at="2025-08-29T20:01:36 IST" name="testUpdateEmployee" finished-at="2025-08-29T20:01:43 IST" duration-ms="7064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UpdateEmployeeTest@7c6908d7]" started-at="2025-08-29T20:01:43 IST" name="tearDown" finished-at="2025-08-29T20:01:44 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.UpdateEmployeeTest -->
+      <class name="tests.DeleteEmployeeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteEmployeeTest@3c9754d8]" started-at="2025-08-29T20:01:44 IST" name="setUp" finished-at="2025-08-29T20:01:51 IST" duration-ms="7059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteEmployee()[pri:0, instance:tests.DeleteEmployeeTest@3c9754d8]" started-at="2025-08-29T20:01:51 IST" name="testDeleteEmployee" finished-at="2025-08-29T20:01:56 IST" duration-ms="4884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteEmployeeTest@3c9754d8]" started-at="2025-08-29T20:01:56 IST" name="tearDown" finished-at="2025-08-29T20:01:56 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DeleteEmployeeTest -->
+      <class name="tests.AddEmployeeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AddEmployeeTest@3857f613]" started-at="2025-08-29T20:01:01 IST" name="setUp" finished-at="2025-08-29T20:01:08 IST" duration-ms="6918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddEmployee()[pri:0, instance:tests.AddEmployeeTest@3857f613]" started-at="2025-08-29T20:01:08 IST" name="testAddEmployee" finished-at="2025-08-29T20:01:20 IST" duration-ms="12136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddEmployeeTest@3857f613]" started-at="2025-08-29T20:01:20 IST" name="tearDown" finished-at="2025-08-29T20:01:20 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AddEmployeeTest -->
+      <class name="tests.LogoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LogoutTest@3bf7ca37]" started-at="2025-08-29T20:01:56 IST" name="setUp" finished-at="2025-08-29T20:02:01 IST" duration-ms="5229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogout()[pri:0, instance:tests.LogoutTest@3bf7ca37]" started-at="2025-08-29T20:02:01 IST" name="testLogout" finished-at="2025-08-29T20:02:05 IST" duration-ms="4262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogoutTest@3bf7ca37]" started-at="2025-08-29T20:02:05 IST" name="tearDown" finished-at="2025-08-29T20:02:06 IST" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LogoutTest -->
+      <class name="tests.InvalidLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.InvalidLoginTest@79079097]" started-at="2025-08-29T20:02:06 IST" name="setUp" finished-at="2025-08-29T20:02:14 IST" duration-ms="8012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:tests.InvalidLoginTest@79079097]" started-at="2025-08-29T20:02:14 IST" name="testInvalidLogin" finished-at="2025-08-29T20:02:16 IST" duration-ms="1729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.InvalidLoginTest@79079097]" started-at="2025-08-29T20:02:16 IST" name="tearDown" finished-at="2025-08-29T20:02:16 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.InvalidLoginTest -->
+      <class name="tests.SearchEmployeeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchEmployeeTest@198b6731]" started-at="2025-08-29T20:01:20 IST" name="setUp" finished-at="2025-08-29T20:01:26 IST" duration-ms="5770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchEmployee()[pri:0, instance:tests.SearchEmployeeTest@198b6731]" started-at="2025-08-29T20:01:26 IST" name="testSearchEmployee" finished-at="2025-08-29T20:01:30 IST" duration-ms="4389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchEmployeeTest@198b6731]" started-at="2025-08-29T20:01:30 IST" name="tearDown" finished-at="2025-08-29T20:01:30 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchEmployeeTest -->
+    </test> <!-- OrangeHRM Tests -->
+  </suite> <!-- OrangeHRM Suite -->
+</testng-results>
