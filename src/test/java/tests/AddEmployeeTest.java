@@ -38,21 +38,7 @@ public class AddEmployeeTest extends BaseTest {
         // Search by empId
         empPage.searchEmployeeById(TestData.employeeId);
 
-        /*// Explicit wait for the employee row to appear
-        
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//div[@class='oxd-table-card']//div[text()='" + TestData.employeeId + "']")
-        ));
-        
-        
-
-        // Assert employee exists in search results
-        Assert.assertTrue(empPage.isEmployeePresent(TestData.employeeId), "Employee with ID " + TestData.employeeId + " not found in list!");
-        System.out.println("Employee added & verified successfully with ID: " + TestData.employeeId);*/
-        
-        
-     // Verify employee exists in results by Employee ID
+     	// Verify employee exists in results by Employee ID
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement employeeRow = wait.until(ExpectedConditions
                 .visibilityOfElementLocated(By.xpath(
