@@ -10,7 +10,7 @@ Automated testing framework for **OrangeHRM** using:
 ### Features
 - Page Object Model (POM) for maintainability
 - Test cases for:
-  - Login
+  - Login (Valid login, Invalid login)
   - Employee management (Add, Search, Update, Delete)
   - Logout
 - Cross-browser testing support
