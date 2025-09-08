@@ -1,21 +1,41 @@
-# Project Title
+  # OrangeHRM Automation Project
 
 ## Introduction
-A brief introduction of your project goes here. You may want to cover the purpose of your project, its core functionality, and what problems it solves.
+This isn’t just a glorified script—it's a fully automated testing framework for OrangeHRM, crafted using Selenium WebDriver, orchestrated by TestNG, and wrapped up with Maven. We’ve architected it using the Page Object Model (POM) so it stays maintainable even when things inevitably break. Covers login, employee lifecycle (add, search, update, delete), plus logout—because nobody leaves before cleaning up.
 
 ## Project Type
-Frontend | Backend | Fullstack
-
-## Deplolyed App
-Frontend: https://deployed-site.whatever
-Backend: https://deployed-site.whatever
-Database: https://deployed-site.whatever
+Backend / Test Automation Framework
 
 ## Directory Structure
-my-app/
-├─ backend/
-├─ frontend/
-│  ├─ ...
+OrangeHRM-Automation/
+├─ src/
+│  ├─ main/
+│  │  ├─ java/
+│  │  │  └─ pages/
+│  │  │     ├─ DashboardPage.java
+│  │  │     ├─ EmployeePage.java
+│  │  │     └─ LoginPage.java
+│  │  └─ resources/
+│  ├─ test/
+│  │  ├─ java/
+│  │  │  ├─ tests/
+│  │  │  │  ├─ AddEmployeeTest.java
+│  │  │  │  ├─ DeleteEmployeeTest.java
+│  │  │  │  ├─ InvalidLoginTest.java
+│  │  │  │  ├─ LoginTest.java
+│  │  │  │  ├─ LogoutTest.java
+│  │  │  │  ├─ SearchEmployeeTest.java
+│  │  │  │  └─ UpdateEmployeeTest.java
+│  │  │  └─ utils/
+│  │  │     ├─ BaseTest.java
+│  │  │     └─ TestData.java
+│  │  └─ resources/
+├─ target/
+├─ test-output/
+├─ pom.xml
+├─ testng.xml
+├─ LICENSE
+└─ README.md
 
 ## Video Walkthrough of the project
 Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
@@ -24,49 +44,62 @@ Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
 Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 
 ## Features
-List out the key features of your application.
+- Login workflow automation
+- Employee Management Module Automation: Add, Search, Update, Delete
+- Logout process validation
+- Clean Page Object Model for readability and maintainability
+- Selenium + TestNG + Maven integration for robust framework structure
 
-- Feature 1
-- Feature 2
-- Feature 3
-
-## design decisions or assumptions
-List your design desissions & assumptions
+## Design decisions or assumptions
+- Employed Page Object Model to simplify maintenance when IDs change or UIs shift.
+- TestNG chosen over JUnit for its powerful test configuration abilities and parallel execution (if you ever decide to scale up).
+- Maven ensures dependency control and consistent build steps across environments.
+- Assumes OrangeHRM UI remains relatively stable—if things shift dramatically, POM needs updates.
 
 ## Installation & Getting started
-Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
+- Clone the repo
 
 ```bash
-npm install my-project
-cd my-project
-npm start
+git clone https://github.com/Lakshmip2011/orangehrm-automation.git
+cd orangehrm-automation
 ```
+- Ensure you have Java (JDK 8+) and Maven installed.
+- Fetch dependencies and compile tests:
+```bash
+mvn clean compile
+```
+- Run tests using Maven or TestNG XML:
+```bash
+mvn test
+```
+Or:
+```bash
+mvn test -DsuiteXmlFile=testng.xml
+```
+- Test results and reports appear under test-output/.
 
 ## Usage
-Provide instructions and examples on how to use your project.
+To run the automation suite:
 
 ```bash
-# Example
+mvn test
 ```
+Or execute individual tests via testng.xml. Results drop into test-output/, where you can review metrics, screenshots (if you add any), or logs.
 
+##Screenshots
 Include screenshots as necessary.
 
 ## Credentials
-Provide user credentials for autheticated pages
-
-## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
-
-## API Endpoints
-In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-GET /api/items - retrieve all items
-POST /api/items - create a new item
-
+Use default OrangeHRM demo creds—or replace as needed:
+```makefile
+Username: Admin
+Password: admin123
+```
 
 ## Technology Stack
-List and provide a brief overview of the technologies used in the project.
-
-- Node.js
-- Express.js
-- MongoDB
-- Other libraries/modules
+- Java – core language
+- Selenium WebDriver – browser automation engine
+- TestNG – test orchestration, data-driven tests
+- Maven – build lifecycle & dependency management
+- Page Object Model (POM) – architecture pattern for maintainability
+- (Optional additions: logging frameworks, screenshot tools, report HTML/CSS)
