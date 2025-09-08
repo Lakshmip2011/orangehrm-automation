@@ -89,7 +89,7 @@ mvn test
 Or execute individual tests via testng.xml. Results drop into test-output/, where you can review metrics, screenshots (if you add any), or logs.
 
 ##Screenshots
-Include screenshots as necessary.
+OrangeHRM Test Report (https://drive.google.com/file/d/19iVL2YSNkTQm5RWP_oZrRd0AdR8CDcPB/view?usp=sharing)
 
 ## Credentials
 Use default OrangeHRM demo creds—or replace as needed:
