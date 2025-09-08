@@ -7,6 +7,7 @@ This isn’t just a glorified script—it's a fully automated testing framework 
 Backend / Test Automation Framework
 
 ## Directory Structure
+```markdown
 OrangeHRM-Automation/
 ├─ src/
 │  ├─ main/
@@ -36,6 +37,7 @@ OrangeHRM-Automation/
 ├─ testng.xml
 ├─ LICENSE
 └─ README.md
+```
 
 ## Video Walkthrough of the project
 Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
