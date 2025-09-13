@@ -9,13 +9,15 @@ import utils.TestData;
 
 public class UpdateEmployeeTest extends BaseTest {
     @Test
-    public void testUpdateEmployee() {
+    public void testUpdateEmployee() throws InterruptedException {
         new LoginPage(driver).login("Admin", "admin123");
         new DashboardPage(driver).goToPIM();
 
         EmployeePage empPage = new EmployeePage(driver);
         // Search using employee id
+        Thread.sleep(2000);
         empPage.searchEmployeeById(TestData.employeeId);
+        Thread.sleep(2000);
         empPage.updateEmployee(TestData.updatedFirstName);        
     }
 }
