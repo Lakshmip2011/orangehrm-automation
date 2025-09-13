@@ -38,12 +38,13 @@ public class AddEmployeeTest extends BaseTest {
         // Search by empId
         empPage.searchEmployeeById(TestData.employeeId);
 
-     	// Verify employee exists in results by Employee ID
+        
+        // Verify employee exists in results by Employee ID
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement employeeRow = wait.until(ExpectedConditions
                 .visibilityOfElementLocated(By.xpath(
                         "//div[@class='oxd-table-card']//div[text()='" + TestData.employeeId + "']"
-                )));
+        )));
 
         Assert.assertTrue(employeeRow.isDisplayed(), "Employee with ID " + TestData.employeeId + " not found in list!");
         System.out.println("Employee added & verified successfully with ID: " + TestData.employeeId);
@@ -51,4 +52,3 @@ public class AddEmployeeTest extends BaseTest {
         
     }
 }
-
