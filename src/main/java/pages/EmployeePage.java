@@ -2,7 +2,9 @@ package pages;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -67,8 +69,13 @@ public class EmployeePage {
     // Update Employee
     public void updateEmployee(String newFirstName) {
         wait.until(ExpectedConditions.elementToBeClickable(editBtn)).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(firstNameField)).clear();
-        driver.findElement(firstNameField).sendKeys(newFirstName);
+        By loader = By.cssSelector(".oxd-form-loader");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(loader));
+        WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(firstNameField));
+        input.click();
+        input.sendKeys(Keys.CONTROL + "a");
+        input.sendKeys(Keys.DELETE);
+        input.sendKeys(newFirstName);
         driver.findElement(saveButton).click();
     }
 
