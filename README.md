@@ -39,12 +39,6 @@ OrangeHRM-Automation/
 └─ README.md
 ```
 
-## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
-
-## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
-
 ## Features
 - Login workflow automation
 - Employee Management Module Automation: Add, Search, Update, Delete
