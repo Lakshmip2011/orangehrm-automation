@@ -99,3 +99,6 @@ Password: admin123
 - Maven – build lifecycle & dependency management
 - Page Object Model (POM) – architecture pattern for maintainability
 - (Optional additions: logging frameworks, screenshot tools, report HTML/CSS)
+
+## Tags
+#selenium #testng #java #automation-framework #page-object-model
